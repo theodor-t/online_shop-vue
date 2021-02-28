@@ -8,23 +8,16 @@
 </template>
 
 <script>
-  import {mapGetters} from 'vuex'
-
   export default {
     name:"v-main-wrapper",
-    components: {
-    },
+    components: {},
     props: {},
     data(){
       return {
         title: 'Main wrapper'
       }
     },
-    computed: {
-      ...mapGetters([
-        'CART'
-  ]),
-    },
+    computed: {},
     methods: {},
     watch: {},
     mounted() {
