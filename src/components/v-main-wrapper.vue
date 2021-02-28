@@ -3,6 +3,7 @@
     <p>{{title}}</p>
     <v-catalog/>
     <v-cart/>
+    <v-catalog-item></v-catalog-item>
   </div>
 
 </template>
