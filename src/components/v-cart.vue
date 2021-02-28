@@ -6,6 +6,7 @@
       </div>
     </router-link>
     <h1>Cart</h1>
+    <p v-if="!cart_data.length">Cart is empty...</p>
     <v-cart-item
       v-for="(item, index) in cart_data"
       :key="item.article"

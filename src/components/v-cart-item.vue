@@ -45,12 +45,13 @@ export default {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: center;
-}
-.v-cart-item__image{
-  max-width: 50px;
   box-shadow: 0 0 8px 0 #e0e0e0;
   padding: 16px;
   margin: 16px;
+  align-items: center;
+}
+.v-cart-item__image{
+  max-width: 70px;
+
 }
 </style>
