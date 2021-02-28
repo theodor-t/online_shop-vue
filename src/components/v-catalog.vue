@@ -6,6 +6,7 @@
           v-for="product in products"
           :key="product.article"
           :product_data="product"
+          @sendDataToParent="showChildArticleInConsole"
       />
     </div>
   </div>
@@ -32,7 +33,7 @@ export default {
         category: "Мужские"
       },
         {
-          image: "1.jpg",
+          image: "2.jpg",
           name: "T-shirt 2",
           price: 2100.234234234,
           article: "T2",
@@ -40,7 +41,7 @@ export default {
           category: "Мужские"
         },
         {
-          image: "1.jpg",
+          image: "3.jpg",
           name: "T-shirt 3",
           price: 2100.234234234,
           article: "T3",
@@ -52,6 +53,11 @@ export default {
     }
   },
   computed: {},
+  methods:{
+    showChildArticleInConsole(data) {
+      console.log(data)
+    }
+  },
   mounted() {
     console.log('test')
   }
