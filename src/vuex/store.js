@@ -4,9 +4,10 @@ import axios from "axios"
 
 Vue.use(Vuex);
 
-const store = new Vuex.Store({
+let store = new Vuex.Store({
     state: {
-        products: []
+        products: [],
+        cart:[]
     },
     mutations: {
         SET_PRODUCTS_TO_STATE: (state, products) => {
@@ -32,6 +33,9 @@ const store = new Vuex.Store({
     getters:{
         PRODUCTS(state){
             return state.products;
+        },
+        CART(state){
+            return state.cart;
         }
     }
 });
