@@ -1,5 +1,8 @@
 <template>
   <div className='v-catalog-item'>
+    <p>Item 1</p>
+    <p>Price: 50</p>
+    <button>Add to cart</button>
   </div>
 </template>
 
