@@ -1,15 +1,22 @@
 <template>
   <div class='v-catalog-item'>
-    <p>Item 1</p>
-    <p>Price: 50</p>
-    <button>Add to cart</button>
+    <p class="v-catalog-item__name">{{}}</p>
+    <p class="v-catalog-item__price">Price: 50</p>
+    <button class="v-catalog-item__add_to_cart_btn">Add to cart</button>
   </div>
 </template>
 
 <script>
 export default {
   name: "v-catalog-item",
-  props: {},
+  props: {
+    product_data: {
+      type: Object,
+      default(){
+        return{}
+      }
+    }
+  },
   data() {
     return {}
   },

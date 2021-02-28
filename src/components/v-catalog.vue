@@ -1,7 +1,13 @@
 <template>
   <div class='v-catalog'>
     <h1>Catalog</h1>
-    <v-catalog-item/>
+    <div class="v-catalog__list">
+      <v-catalog-item
+          v-for="product in products"
+          :key="product.article"
+          :product_data="product"
+      />
+    </div>
   </div>
 </template>
 
@@ -14,7 +20,36 @@ export default {
   },
   props: {},
   data() {
-    return {}
+    return {
+
+      products: [
+      {
+        image: "1.jpg",
+        name: "T-shirt 1",
+        price: 2100.234234234,
+        article: "T1",
+        available: true,
+        category: "Мужские"
+      },
+        {
+          image: "1.jpg",
+          name: "T-shirt 2",
+          price: 2100.234234234,
+          article: "T2",
+          available: true,
+          category: "Мужские"
+        },
+        {
+          image: "1.jpg",
+          name: "T-shirt 3",
+          price: 2100.234234234,
+          article: "T3",
+          available: true,
+          category: "Мужские"
+        }
+
+    ]
+    }
   },
   computed: {},
   mounted() {
@@ -24,6 +59,11 @@ export default {
 </script>
 
 <style>
-
+  .v-catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 
 </style>
