@@ -20,9 +20,7 @@
     computed: {},
     methods: {},
     watch: {},
-    mounted() {
-      console.log('Darova')
-    }
+    mounted() {}
   }
 </script>
 
