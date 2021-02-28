@@ -12,9 +12,11 @@ let store = new Vuex.Store({
     mutations: {
         SET_PRODUCTS_TO_STATE: (state, products) => {
             state.products = products;
+        },
+        SET_CART: (state, product) => {
+            state.cart.push(product)
         }
-    }
-    ,
+    },
     actions: {
         GET_PRODUCTS_FROM_API({commit}){
             return axios('http://localhost:3000/products', {
@@ -28,6 +30,9 @@ let store = new Vuex.Store({
                     console.log(error)
                     return error;
                 })
+        },
+        ADD_TO_CART({commit}, product) {
+            commit('SET_CART', product)
         }
     },
     getters:{
