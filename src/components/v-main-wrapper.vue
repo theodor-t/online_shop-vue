@@ -1,6 +1,9 @@
 <template>
   <div class="v-main-wrapper">
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
+
 <!--    <v-catalog/>-->
 <!--    <v-cart
         v-if="CART.length"
