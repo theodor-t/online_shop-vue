@@ -32,7 +32,7 @@ export default {
     deleteFromCart(){
       this.$emit('deleteFromCart')
     }
-  }
+  },
   computed: {},
   mounted() {
     this.$set(this.cart_item_data, 'quantity', 1 )
