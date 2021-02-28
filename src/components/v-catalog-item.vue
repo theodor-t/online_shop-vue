@@ -2,7 +2,7 @@
   <div class='v-catalog-item'>
     <p class="v-catalog-item__name">{{}}</p>
     <p class="v-catalog-item__price">Price: 50</p>
-    <button class="v-catalog-item__add_to_cart_btn">Add to cart</button>
+    <button class="v-catalog-item__add_to_cart_btn btn">Add to cart</button>
   </div>
 </template>
 
