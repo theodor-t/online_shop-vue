@@ -20,6 +20,7 @@
           @addToCart="addToCart"
       />
     </div>
+
   </div>
 </template>
 

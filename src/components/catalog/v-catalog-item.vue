@@ -3,7 +3,7 @@
     <img class="v-catalog-item__image" :src=" require('../../assets/images/' + product_data.image )" alt="img_prod">
     <p class="v-catalog-item__name">{{ product_data.name }}</p>
     <p class="v-catalog-item__price">Price: {{ product_data.price }} lei</p>
-    <button class="v-catalog-item__add_to_cart_btn btn"
+    <button type="button" class="v-catalog-item__add_to_cart_btn btn btn-primary"
             @click="addToCart">
       Add to cart
     </button>
