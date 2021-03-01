@@ -1,5 +1,5 @@
 <template>
-  <div class="v-main-wrapper">
+  <div :style="myStyle" class="v-main-wrapper">
     <keep-alive>
       <router-view></router-view>
     </keep-alive>

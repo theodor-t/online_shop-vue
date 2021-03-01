@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+
     <v-main-wrapper>
 
     </v-main-wrapper>
@@ -17,6 +18,7 @@ export default {
   },
   data(){
     return{
+
     }
   },
   computed:{

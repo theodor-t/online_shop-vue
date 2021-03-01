@@ -2,51 +2,201 @@
   "products": [
     {
       "image": "1.jpg",
-      "name": "T-shirt 1",
-      "price": 2100.234234234,
+      "name": "Philadelphia Lite",
+      "price": 75,
+      "weight":"110 g",
       "article": "T1",
       "available": true,
-      "category": "Мужские"
+      "category": "Rolls"
     },
     {
       "image": "2.jpg",
-      "name": "T-shirt 2",
-      "price": 3150.12312412,
+      "name": "Philadelphia",
+      "price": 85,
+      "weight":"110 g",
       "article": "T2",
       "available": true,
-      "category": "Мужские"
+      "category": "Rolls"
     },
     {
       "image": "3.jpg",
-      "name": "T-shirt 3",
-      "price": 4200.51524,
+      "name": "Okinava",
+      "price": 70,
+      "weight":"110 g",
       "article": "T3",
       "available": false,
-      "category": "Женские"
+      "category": "Rolls"
     },
     {
       "image": "4.jpg",
       "name": "T-shirt 4",
       "price": 5300.1245512,
+      "weight":"110 g",
       "article": "T4",
       "available": true,
-      "category": "Мужские"
+      "category": "Rolls"
     },
     {
       "image": "5.jpg",
       "name": "T-shirt 5",
       "price": 6500.3522314,
+      "weight":"110 g",
       "article": "T5",
       "available": false,
-      "category": "Женские"
+      "category": "Rolls"
     },
     {
-      "image": "6.jpeg",
-      "name": "T-shirt 6",
-      "price": 8700.4124123,
+      "image": "6.jpg",
+      "name": "T-shirt 5",
+      "price": 6500.3522314,
+      "weight":"110 g",
       "article": "T6",
+      "available": false,
+      "category": "Rolls"
+    },
+    {
+      "image": "7.jpg",
+      "name": "T-shirt 5",
+      "price": 6500.3522314,
+      "weight":"110 g",
+      "article": "T7",
+      "available": false,
+      "category": "Rolls"
+    },
+    {
+      "image": "8.jpg",
+      "name": "T-shirt 5",
+      "price": 6500.3522314,
+      "weight":"110 g",
+      "article": "T8",
+      "available": false,
+      "category": "Rolls"
+    },
+    {
+      "image": "9.jpg",
+      "name": "T-shirt 5",
+      "price": 6500.3522314,
+      "weight":"110 g",
+      "article": "T9",
+      "available": false,
+      "category": "Rolls"
+    },
+    {
+      "image": "10.jpg",
+      "name": "T-shirt 5",
+      "price": 6500.3522314,
+      "weight":"110 g",
+      "article": "T10",
+      "available": false,
+      "category": "Rolls"
+    },
+    {
+      "image": "11.jpg",
+      "name": "T-shirt 5",
+      "price": 6500.3522314,
+      "weight":"110 g",
+      "article": "T11",
+      "available": false,
+      "category": "Rolls"
+    },
+    {
+      "image": "12.jpg",
+      "name": "T-shirt 5",
+      "price": 6500.3522314,
+      "weight":"110 g",
+      "article": "T12",
+      "available": false,
+      "category": "Rolls"
+    },
+    {
+      "image": "13.jpg",
+      "name": "T-shirt 5",
+      "price": 6500.3522314,
+      "weight":"110 g",
+      "article": "T13",
+      "available": false,
+      "category": "Rolls"
+    },
+    {
+      "image": "14.jpg",
+      "name": "T-shirt 5",
+      "price": 6500.3522314,
+      "weight":"110 g",
+      "article": "T14",
+      "available": false,
+      "category": "Rolls"
+    },
+    {
+      "image": "15.jpg",
+      "name": "T-shirt 5",
+      "price": 6500.3522314,
+      "weight":"110 g",
+      "article": "T15",
+      "available": false,
+      "category": "Rolls"
+    },
+    {
+      "image": "16.jpg",
+      "name": "T-shirt 5",
+      "price": 6500.3522314,
+      "weight":"110 g",
+      "article": "T16",
+      "available": false,
+      "category": "Rolls"
+    },
+    {
+      "image": "17.jpg",
+      "name": "T-shirt 5",
+      "price": 6500.3522314,
+      "weight":"110 g",
+      "article": "T17",
+      "available": false,
+      "category": "Rolls"
+    },
+    {
+      "image": "18.jpg",
+      "name": "T-shirt 5",
+      "price": 6500.3522314,
+      "weight":"110 g",
+      "article": "T18",
+      "available": false,
+      "category": "Rolls"
+    },
+    {
+      "image": "19.jpg",
+      "name": "T-shirt 5",
+      "price": 6500.3522314,
+      "weight":"110 g",
+      "article": "T19",
+      "available": false,
+      "category": "Sets"
+    },
+    {
+      "image": "20.jpg",
+      "name": "T-shirt 5",
+      "price": 6500.3522314,
+      "weight":"110 g",
+      "article": "T20",
+      "available": false,
+      "category": "Sets"
+    },
+    {
+      "image": "21.jpg",
+      "name": "T-shirt 5",
+      "price": 6500.3522314,
+      "weight":"110 g",
+      "article": "T21",
+      "available": false,
+      "category": "Sets"
+    },
+    {
+      "image": "22.jpg",
+      "name": "Set Rolls",
+      "weight":"110 g",
+      "price": 120,
+      "article": "T20",
       "available": true,
-      "category": "Женские"
+      "category": "Sets"
     }
   ]
 }

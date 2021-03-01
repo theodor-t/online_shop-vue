@@ -1,10 +1,15 @@
 <template>
   <div class='v-catalog-item'>
     <img class="v-catalog-item__image" :src=" require('../../assets/images/' + product_data.image )" alt="img_prod">
-    <p class="v-catalog-item__name">{{ product_data.name }}</p>
-    <p class="v-catalog-item__price">Price: {{ product_data.price }} lei</p>
-    <button type="button" class="v-catalog-item__add_to_cart_btn btn btn-primary"
-            @click="addToCart">
+    <p class="v-catalog-item__name font-weight-bold">{{ product_data.name }}</p>
+    <p class="v-catalog-item__weight font-weight-bold">Weight: {{ product_data.weight }}</p>
+    <p class="v-catalog-item__price font-weight-bold">Price: {{ product_data.price }} lei</p>
+    <button type="button" class="
+            v-catalog-item__add_to_cart_btn
+            btn btn-outline-primary rounded-pill"
+            @click="addToCart
+
+    ">
       Add to cart
       <svg xmlns="http://www.w3.org/2000/svg"
            width="16"
@@ -53,7 +58,7 @@ export default {
 }
 
 .v-catalog-item__image {
-  width: 130px;
+  width: 200px;
 }
 .btn{
   padding: 8px 16px;
@@ -63,4 +68,9 @@ export default {
   border: 0;
   border-radius: 4px;
 }
+.v-catalog-item__weight{
+  color: #919191;
+}
+
+
 </style>
