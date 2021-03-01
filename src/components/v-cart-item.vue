@@ -8,11 +8,11 @@
     </div>
     <div class="v-cart-item__quantity">
       <p>Qty:</p>
-      <span @click="decrementItem">-</span>
+      <span class="quantity__btn" @click="decrementItem">-</span>
       <span>
         {{cart_item_data.quantity}}
       </span>
-      <span @click="incrementItem">+</span>
+      <span class="quantity__btn" @click="incrementItem">+</span>
     </div>
     <button @click="deleteFromCart">Delete</button>
   </div>
@@ -63,5 +63,8 @@ export default {
 .v-cart-item__image{
   max-width: 70px;
 
+}
+.quantity__btn{
+  cursor: pointer;
 }
 </style>

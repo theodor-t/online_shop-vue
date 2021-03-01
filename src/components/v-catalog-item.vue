@@ -47,5 +47,12 @@ export default {
 .v-catalog-item__image {
   width: 130px;
 }
-
+.btn{
+  padding: 8px 16px;
+  cursor: pointer;
+  background: #0c8804;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+}
 </style>

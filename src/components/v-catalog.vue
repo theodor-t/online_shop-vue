@@ -72,5 +72,8 @@ export default {
     padding: 16px;
     border: solid 1px #aeaeae;
   }
+  .btn{
+
+  }
 
 </style>
