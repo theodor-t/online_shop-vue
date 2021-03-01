@@ -6,9 +6,14 @@
       </div>
     </router-link>
     <h1>Catalog</h1>
+    <v-select
+        :options="categories"
+        @select="sortByCategories"
+        :selected="selected"
+    />
     <div class="v-catalog__list">
       <v-catalog-item
-          v-for="product in PRODUCTS"
+          v-for="product in filteredProducts"
           :key="product.article"
           :product_data="product"
           @addToCart="addToCart"
@@ -20,16 +25,27 @@
 <script>
 import vCatalogItem from './v-catalog-item'
 import {mapActions, mapGetters} from 'vuex'
+import vSelect from '../../components/v-select'
 
 export default {
   name: "v-catalog",
   components: {
-    vCatalogItem
+    vCatalogItem,
+    vSelect
   },
   props: {},
   data() {
     return {
-
+      categories: [
+        {name: 'Все', value: 'ALL'},
+        {name: 'Мужские', value: 'м'},
+        {name: 'Женские', value: 'ж'},
+      ],
+      selected: 'Все',
+      sortedProducts: [],
+      minPrice: 0,
+      maxPrice: 10000,
+      messages: []
     }
   },
   computed: {
@@ -37,6 +53,13 @@ export default {
         'PRODUCTS',
         'CART'
     ]),
+    filteredProducts() {
+      if (this.sortedProducts.length) {
+        return this.sortedProducts
+      } else {
+        return this.PRODUCTS
+      }
+    },
   },
   methods:{
     ...mapActions([
@@ -45,6 +68,19 @@ export default {
     ]),
     addToCart(data) {
       this.ADD_TO_CART(data)
+    },
+    sortByCategories(category) {
+      let vm = this;
+      this.sortedProducts = [...this.PRODUCTS]
+      this.sortedProducts = this.sortedProducts.filter(function (item) {
+        return item.price >= vm.minPrice && item.price <= vm.maxPrice
+      })
+      if (category) {
+        this.sortedProducts = this.sortedProducts.filter(function (e) {
+          vm.selected = category.name;
+          return e.category === category.name
+        })
+      }
     }
   },
   mounted() {
