@@ -66,6 +66,7 @@ name: "v-select",
     position: relative;
     width: 200px;
     cursor: pointer;
+    bottom: 50px;
   }
   .v-select p{
     margin: 0;
@@ -73,7 +74,7 @@ name: "v-select",
   .options{
     border: solid 1px #aeaeae;
     position: absolute;
-    top:30px;
+    top:25px;
     right: 0;
     width: 100%;
   }

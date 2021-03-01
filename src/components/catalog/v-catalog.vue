@@ -10,7 +10,7 @@
         :options="categories"
         @select="sortByCategories"
         :selected="selected"
-        :isExpanded="IS_DESKTOP"
+
     />
     <div class="v-catalog__list">
       <v-catalog-item
@@ -27,7 +27,6 @@
 import vCatalogItem from './v-catalog-item'
 import {mapActions, mapGetters} from 'vuex'
 import vSelect from '../../components/v-select'
-
 export default {
   name: "v-catalog",
   components: {
@@ -51,10 +50,10 @@ export default {
   },
   computed: {
     ...mapGetters([
-        'PRODUCTS',
-        'CART',
-        'IS_MOBILE',
-        'IS_DESKTOP'
+      'PRODUCTS',
+      'CART',
+      'IS_MOBILE',
+      'IS_DESKTOP'
     ]),
     filteredProducts() {
       if (this.sortedProducts.length) {
@@ -66,8 +65,8 @@ export default {
   },
   methods:{
     ...mapActions([
-        'GET_PRODUCTS_FROM_API',
-        'ADD_TO_CART'
+      'GET_PRODUCTS_FROM_API',
+      'ADD_TO_CART'
     ]),
     addToCart(data) {
       this.ADD_TO_CART(data)
@@ -88,31 +87,29 @@ export default {
   },
   mounted() {
     this.GET_PRODUCTS_FROM_API()
-    .then((response) => {
-      if(response.data){
-        console.log('Data arrived!')
-      }
-    })
+        .then((response) => {
+          if(response.data){
+            console.log('Data arrived!')
+          }
+        })
   }
 }
 </script>
 
 <style>
-  .v-catalog__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+.v-catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
-  .v-catalog__link__to_cart{
-    position: absolute;
-    top:10px;
-    right: 10px;
-    padding: 16px;
-    border: solid 1px #aeaeae;
-  }
-  .btn{
-
-  }
-
+.v-catalog__link__to_cart{
+  position: absolute;
+  top:10px;
+  right: 10px;
+  padding: 16px;
+  border: solid 1px #aeaeae;
+}
+.btn{
+}
 </style>

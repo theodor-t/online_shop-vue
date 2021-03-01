@@ -10,8 +10,6 @@
 <script>
 import vMainWrapper from './components/v-main-wrapper'
 import {mapActions, mapGetters} from 'vuex'
-
-
 export default {
   name: 'App',
   components:{
@@ -19,13 +17,12 @@ export default {
   },
   data(){
     return{
-
     }
   },
   computed:{
     ...mapGetters([
-        'IS_MOBILE',
-        'IS_DESKTOP'
+      'IS_MOBILE',
+      'IS_DESKTOP'
     ])
   },
   methods: {
