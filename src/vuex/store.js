@@ -52,7 +52,14 @@ let store = new Vuex.Store({
         },
         DELETE_FROM_CART({commit}, index) {
             commit('REMOVE_FROM_CART', index)
-        }
+        },
+        INCREMENT_CART_ITEM({commit}, ){
+            commit ('INCREMENT')
+        },
+        DECREMENT_CART_ITEM({comit}, ){
+            comit ('DECREMENT')
+        },
+
     },
     getters: {
         PRODUCTS(state) {

@@ -8,10 +8,11 @@
     </div>
     <div class="v-cart-item__quantity">
       <p>Qty:</p>
+      <span @click="decrementItem">-</span>
       <span>
-
+        {{cart_item_data.quantity}}
       </span>
-      {{cart_item_data.quantity}}
+      <span @click="incrementItem">+</span>
     </div>
     <button @click="deleteFromCart">Delete</button>
   </div>
@@ -32,6 +33,12 @@ export default {
     return {}
   },
   methods:{
+    decrementItem(){
+      this.$emit('decrement')
+    },
+    incrementItem(){
+      this.$emit('increment')
+    },
     deleteFromCart(){
       this.$emit('deleteFromCart')
     }

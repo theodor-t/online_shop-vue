@@ -30,7 +30,9 @@ export default {
   },
   methods:{
     ...mapActions([
-      'DELETE_FROM_CART'
+      'DELETE_FROM_CART',
+      'INCREMENT_CART_ITEM',
+      'DECREMENT_CART_ITEM'
     ]),
     deleteFromCart(index) {
       this.DELETE_FROM_CART(index)
