@@ -14,8 +14,8 @@
       @deleteFromCart="deleteFromCart(index)"
     />
     <div class="v-cart__total">
-      <p>Total: </p>
-      <p>2450 lei</p>
+      <p class="v-cart__total__name">Total: </p>
+      <p>{{cartTotalCost}} lei</p>
     </div>
   </div>
 </template>
@@ -47,7 +47,24 @@ export default {
   data() {
     return {}
   },
-  computed: {},
+  computed: {
+    cartTotalCost() {
+      let result = []
+      if(this.cart_data.length){
+        for (let item of this.cart_data){
+          result.push(item.price * item.quantity)
+        }
+        result = result.reduce(function (sum, el){
+          return sum + el;
+        })
+        return result
+      }
+
+      else{
+        return 0
+      }
+    }
+  },
   mounted() {
     console.log('carttest')
   }
@@ -55,5 +72,22 @@ export default {
 </script>
 
 <style>
-
+  .v-cart{
+    margin-bottom: 100px;
+  }
+  .v-cart__total{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding:16px  24px;
+    display: flex;
+    justify-content: center;
+    background: #0c8804;
+    color: floralwhite;
+    font-size: 20px;
+  }
+  .v-cart__total__name{
+    margin-right: 16px;
+  }
 </style>

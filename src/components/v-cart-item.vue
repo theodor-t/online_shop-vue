@@ -8,6 +8,9 @@
     </div>
     <div class="v-cart-item__quantity">
       <p>Qty:</p>
+      <span>
+
+      </span>
       {{cart_item_data.quantity}}
     </div>
     <button @click="deleteFromCart">Delete</button>
