@@ -13,6 +13,10 @@
       :cart_item_data="item"
       @deleteFromCart="deleteFromCart(index)"
     />
+    <div class="v-cart__total">
+      <p>Total: </p>
+      <p>2450 lei</p>
+    </div>
   </div>
 </template>
 

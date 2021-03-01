@@ -22,7 +22,7 @@ npm run lint
 
 ### Json Db
 ```
-json-server —watch db.json
+json-server --watch db.json
 ```
 
 ### Customize configuration
