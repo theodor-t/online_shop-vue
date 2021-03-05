@@ -87,7 +87,6 @@ export default {
   width: 50%;
   justify-content: space-around;
 }
-
 .v-cart-item__quantity {
   display: flex;
   align-items: center;
