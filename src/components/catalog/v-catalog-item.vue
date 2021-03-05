@@ -1,31 +1,53 @@
 <template>
   <div class='v-catalog-item'>
+
+    <v-popup
+    v-if="isInfoPopupVisible"
+    rightButtonTitle = "Add to cart"
+    :popupTitle = " product_data.name"
+    @closePopup="closeInfoPopup"
+    @rightButtonAction="addToCart"
+    >
+    <div>
+      <img class="v-catalog-item__image" :src=" require('../../assets/images/' + product_data.image )" alt="img_prod">
+      <p class="v-catalog-item__name font-weight-bold">{{ product_data.name }}</p>
+      <p class="v-catalog-item__weight font-weight-bold">Weight: {{ product_data.weight }}</p>
+      <p class="v-catalog-item__description font-weight-bold">Description: {{ product_data.description }}</p>
+      <p class="v-catalog-item__category font-weight-bold">Category: {{ product_data.category }}</p>
+      <p class="v-catalog-item__price font-weight-bold">Price: {{ product_data.price }} lei</p>
+    </div>
+    </v-popup>
+
     <img class="v-catalog-item__image" :src=" require('../../assets/images/' + product_data.image )" alt="img_prod">
     <p class="v-catalog-item__name font-weight-bold">{{ product_data.name }}</p>
     <p class="v-catalog-item__weight font-weight-bold">Weight: {{ product_data.weight }}</p>
     <p class="v-catalog-item__price font-weight-bold">Price: {{ product_data.price }} lei</p>
+    <button
+        class="v-catalog-item__show-info"
+        @click="showPopupInfo"
+
+    >
+      Show info
+    </button>
     <button type="button" class="
             v-catalog-item__add_to_cart_btn
-            btn btn-outline-primary rounded-pill"
-            @click="addToCart
-
-    ">
+            btn
+            btn-outline-primary
+            rounded-pill"
+            @click="addToCart"
+    >
       Add to cart
-      <svg xmlns="http://www.w3.org/2000/svg"
-           width="16"
-           height="16"
-           fill="currentColor"
-           class="bi bi-cart4"
-           viewBox="0 0 16 16">
-        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-      </svg>
     </button>
   </div>
 </template>
 
 <script>
+import vPopup from '../popup/v-popup'
 export default {
   name: "v-catalog-item",
+  components:{
+    vPopup
+  },
   props: {
     product_data: {
       type: Object,
@@ -35,12 +57,20 @@ export default {
     }
   },
   data() {
-    return {}
+    return {
+      isInfoPopupVisible :false
+    }
   },
   computed: {},
   methods: {
     addToCart() {
       this.$emit('addToCart',this.product_data)
+    },
+    showPopupInfo(){
+      this.isInfoPopupVisible = true;
+    },
+    closeInfoPopup(){
+      this.isInfoPopupVisible = false;
     }
   },
   mounted() {

@@ -22,6 +22,7 @@
         :selected="selected"
 
     />
+    <p>{{selected}}</p>
     <div class="v-catalog__list">
       <v-catalog-item
           v-for="product in filteredProducts"

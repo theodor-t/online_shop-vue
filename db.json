@@ -6,7 +6,7 @@
       "price": 70,
       "weight":"180 g",
       "article": "T1",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Rolls"
     },
     {
@@ -15,7 +15,7 @@
       "price": 100,
       "weight":"240 g",
       "article": "T2",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Rolls"
     },
     {
@@ -24,7 +24,7 @@
       "price": 70,
       "weight":"200 g",
       "article": "T3",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Rolls"
     },
     {
@@ -33,7 +33,7 @@
       "price": 60,
       "weight":"160 g",
       "article": "T4",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Rolls"
     },
     {
@@ -42,7 +42,7 @@
       "price": 118,
       "weight":"205 g",
       "article": "T5",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Rolls"
     },
     {
@@ -51,7 +51,7 @@
       "price": 80,
       "weight":"195 g",
       "article": "T6",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Rolls"
     },
     {
@@ -60,7 +60,7 @@
       "price": 55,
       "weight":"200 g",
       "article": "T7",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Rolls"
     },
     {
@@ -69,7 +69,7 @@
       "price": 75,
       "weight":"190 g",
       "article": "T8",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Rolls"
     },
     {
@@ -78,7 +78,7 @@
       "price": 75,
       "weight":"205 g",
       "article": "T9",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Rolls"
     },
     {
@@ -87,7 +87,7 @@
       "price": 50,
       "weight":"165 g",
       "article": "T10",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Rolls"
     },
     {
@@ -96,7 +96,7 @@
       "price": 75,
       "weight":"190 g",
       "article": "T11",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Rolls"
     },
     {
@@ -105,7 +105,7 @@
       "price": 45,
       "weight":"155 g",
       "article": "T12",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Rolls"
     },
     {
@@ -114,7 +114,7 @@
       "price": 40,
       "weight":"165 g",
       "article": "T13",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Rolls"
     },
     {
@@ -123,7 +123,7 @@
       "price": 65,
       "weight":"175 g",
       "article": "T14",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Rolls"
     },
     {
@@ -132,7 +132,7 @@
       "price": 115,
       "weight":"230 g",
       "article": "T15",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Rolls"
     },
     {
@@ -141,7 +141,7 @@
       "price": 65,
       "weight":"200 g",
       "article": "T16",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Rolls"
     },
     {
@@ -150,7 +150,7 @@
       "price": 75,
       "weight":"240 g",
       "article": "T17",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Rolls"
     },
     {
@@ -159,7 +159,7 @@
       "price": 40,
       "weight":"100 g",
       "article": "T18",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Rolls"
     },
     {
@@ -168,7 +168,7 @@
       "price": 210,
       "weight":"715 g",
       "article": "T19",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Sets"
     },
     {
@@ -177,7 +177,7 @@
       "price": 180,
       "weight":"645 g",
       "article": "T20",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Sets"
     },
     {
@@ -186,7 +186,7 @@
       "price": 570,
       "weight":"1900 g",
       "article": "T21",
-      "available": true,
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Sets"
     },
     {
@@ -194,8 +194,8 @@
       "name": "Yaki Tempura",
       "weight":"765 g",
       "price": 205,
-      "article": "T20",
-      "available": true,
+      "article": "T22",
+      "description": "Salmon,ris,etaf,asgfhgas,asfasfghhh",
       "category": "Sets"
     }
   ]
