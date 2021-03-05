@@ -10,11 +10,12 @@
     >
     <div>
       <img class="v-catalog-item__image__popup" :src=" require('../../assets/images/' + product_data.image ) "  alt="img_prod">
-      <p class="v-catalog-item__name font-weight-bold">{{ product_data.name }}</p>
-      <p class="v-catalog-item__weight font-weight-bold">Weight: {{ product_data.weight }}</p>
-      <p class="v-catalog-item__description font-weight-bold">Description: {{ product_data.description }}</p>
-      <p class="v-catalog-item__category font-weight-bold">Category: {{ product_data.category }}</p>
-      <p class="v-catalog-item__price font-weight-bold">Price: {{ product_data.price }} lei</p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Weight: {{ product_data.weight }}</li>
+        <li class="list-group-item">Description: {{ product_data.description }}</li>
+        <li class="list-group-item">Category: {{ product_data.category }}</li>
+        <li class="list-group-item">Price: {{ product_data.price }} lei</li>
+      </ul>
     </div>
     </v-popup>
 

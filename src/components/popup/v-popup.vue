@@ -1,16 +1,15 @@
 <template>
 <div class="popup_wrapper" ref="popup_wrapper">
   <div class="v-popup">
+
+    <i id="close"
+        class="material-icons close_btn"
+        @click="closePopup"
+    >
+      close
+    </i>
     <div class="v-popup__header">
       <span>{{popupTitle}}</span>
-      <span>
-      <i
-          class="material-icons close_btn"
-          @click="closePopup"
-      >
-        close
-      </i>
-    </span>
     </div>
     <div class="v-popup__content">
       <slot></slot>
@@ -88,12 +87,27 @@ name: "v-popup",
   background: #ffffff;
   box-shadow: 0 0 17px 0 #e7e7e7;
   z-index: 10;
+  border-radius: 20px;
 }
-.v-popup__header, .v-popup__footer{
+.v-popup__header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  font-size: 20px;
+  color: darkblue;
+  font-family: Helvetica;
 }
+#close {
+  position: absolute;
+  left: 360px;
+}
+.v-popup__footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
 .v-popup__content{
   display: flex;
   justify-content: center;
