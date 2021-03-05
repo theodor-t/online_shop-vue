@@ -9,7 +9,7 @@
     @rightButtonAction="addToCart"
     >
     <div>
-      <img class="v-catalog-item__image" :src=" require('../../assets/images/' + product_data.image )" alt="img_prod">
+      <img class="v-catalog-item__image__popup" :src=" require('../../assets/images/' + product_data.image ) "  alt="img_prod">
       <p class="v-catalog-item__name font-weight-bold">{{ product_data.name }}</p>
       <p class="v-catalog-item__weight font-weight-bold">Weight: {{ product_data.weight }}</p>
       <p class="v-catalog-item__description font-weight-bold">Description: {{ product_data.description }}</p>
@@ -18,7 +18,7 @@
     </div>
     </v-popup>
 
-    <img class="v-catalog-item__image" :src=" require('../../assets/images/' + product_data.image )" alt="img_prod">
+    <img class="v-catalog-item__image" :src=" require('../../assets/images/' + product_data.image )" @click="showPopupInfo" alt="img_prod">
     <p class="v-catalog-item__name font-weight-bold">{{ product_data.name }}</p>
     <p class="v-catalog-item__weight font-weight-bold">Weight: {{ product_data.weight }}</p>
     <p class="v-catalog-item__price font-weight-bold">Price: {{ product_data.price }} lei</p>
@@ -88,6 +88,10 @@ export default {
 }
 
 .v-catalog-item__image {
+  width: 200px;
+  cursor: pointer;
+}
+.v-catalog-item__image__popup{
   width: 200px;
 }
 .btn{

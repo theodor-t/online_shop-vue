@@ -5,7 +5,7 @@
       <span>{{popupTitle}}</span>
       <span>
       <i
-          class="material-icons"
+          class="material-icons close_btn"
           @click="closePopup"
       >
         close
@@ -100,5 +100,8 @@ name: "v-popup",
   padding: 8px;
   color: #ffffff;
   background-color: red;
+}
+.close_btn{
+  cursor: pointer;
 }
 </style>
