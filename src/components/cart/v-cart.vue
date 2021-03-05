@@ -82,10 +82,10 @@ export default {
 </script>
 
 <style>
-  .v-cart{
-    max-width: 1000px;
+.v-cart{
+    max-width: 100%;
     margin-bottom: 100px;
-    margin: 0 auto;
+
   }
   .v-cart__total{
     position: fixed;
