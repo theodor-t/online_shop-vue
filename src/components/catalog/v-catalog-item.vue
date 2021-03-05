@@ -82,10 +82,11 @@ export default {
 
 <style>
 .v-catalog-item {
-  flex-basis: 25%;
+  flex-basis: 30%;
   box-shadow: 0 0 8px 0 #aeaeae;
   padding: 16px;
   margin: 16px;
+  border-radius: 20px;
 }
 
 .v-catalog-item__image {
