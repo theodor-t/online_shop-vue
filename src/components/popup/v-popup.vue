@@ -16,9 +16,17 @@
       <slot></slot>
     </div>
     <div class="v-popup__footer">
-      <button class="close_modal " @click="closePopup">Close</button>
+      <button class="btn
+            btn-outline-danger
+            rounded-pill"
+            @click="closePopup"
+      >
+        Close
+      </button>
       <button
-          class="submit_btn"
+          class="btn
+            btn-outline-primary
+            rounded-pill"
           @click="rightButtonAction"
       >
         {{ rightButtonTitle }}
