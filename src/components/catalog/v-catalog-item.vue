@@ -94,14 +94,7 @@ export default {
 .v-catalog-item__image__popup{
   width: 200px;
 }
-.btn{
-  padding: 8px 16px;
-  cursor: pointer;
-  background: #0c8804;
-  color: white;
-  border: 0;
-  border-radius: 4px;
-}
+
 .v-catalog-item__weight{
   color: #919191;
 }
