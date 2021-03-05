@@ -83,7 +83,9 @@ export default {
 
 <style>
   .v-cart{
+    max-width: 1000px;
     margin-bottom: 100px;
+    margin: 0 auto;
   }
   .v-cart__total{
     position: fixed;

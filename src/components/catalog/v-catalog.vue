@@ -125,4 +125,8 @@ export default {
 .selected_category{
   font-size: 25px;
 }
+.v-catalog{
+  max-width: 1000px;
+  margin: 0 auto;
+}
 </style>

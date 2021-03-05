@@ -8,11 +8,11 @@
     </div>
     <div class="v-cart-item__quantity">
       <p>Qty:</p>
-      <button type="button" class="quantity__btn btn btn-secondary" @click="decrementItem">-</button>
+      <i class="material-icons quantity__btn btn btn-secondary" @click="decrementItem">remove</i>
       <span>
         {{cart_item_data.quantity}}
       </span>
-      <button type="button" class="quantity__btn btn btn-success" @click="incrementItem">+</button>
+      <i class="material-icons quantity__btn btn btn-success" @click="incrementItem">add</i>
     </div>
       <i
           @click="deleteFromCart"

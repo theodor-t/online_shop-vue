@@ -5,6 +5,7 @@
 
     </v-main-wrapper>
 
+
   </div>
 </template>
 
@@ -14,7 +15,7 @@ import {mapActions, mapGetters} from 'vuex'
 export default {
   name: 'App',
   components:{
-    vMainWrapper
+    vMainWrapper,
   },
   data(){
     return{

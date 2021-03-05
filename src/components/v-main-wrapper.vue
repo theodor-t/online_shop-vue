@@ -26,7 +26,7 @@
 
 <style>
 .v-main-wrapper{
-  max-width: 900px;
+  max-width: 100%;
   margin: 0 auto;
 }
 </style>
