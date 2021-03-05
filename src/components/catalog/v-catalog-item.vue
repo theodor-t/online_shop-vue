@@ -22,13 +22,13 @@
     <p class="v-catalog-item__name font-weight-bold">{{ product_data.name }}</p>
     <p class="v-catalog-item__weight font-weight-bold">Weight: {{ product_data.weight }}</p>
     <p class="v-catalog-item__price font-weight-bold">Price: {{ product_data.price }} lei</p>
-    <button
+<!--    <button
         class="v-catalog-item__show-info"
         @click="showPopupInfo"
 
     >
       Show info
-    </button>
+    </button>-->
     <button type="button" class="
             v-catalog-item__add_to_cart_btn
             btn

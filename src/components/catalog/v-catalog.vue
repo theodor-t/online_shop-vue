@@ -22,7 +22,7 @@
         :selected="selected"
 
     />
-    <p>{{selected}}</p>
+    <p class="selected_category">{{selected}}</p>
     <div class="v-catalog__list">
       <v-catalog-item
           v-for="product in filteredProducts"
@@ -122,6 +122,7 @@ export default {
   padding: 16px;
   border: solid 1px #aeaeae;
 }
-.btn{
+.selected_category{
+  font-size: 25px;
 }
 </style>
