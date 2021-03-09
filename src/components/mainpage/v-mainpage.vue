@@ -13,9 +13,7 @@
           <h1>Hello World </h1>
           <br/>
           <button class="btn btn-default btn-lg">About Us</button>
-          <button class="btn btn-primary btn-lg ">
-            <router-link class="btn-catalog" :to="{name: 'catalog'}">Catalog</router-link>
-          </button>
+            <a class="btn btn-outline-warning btn-lg btn-catalog" href="#/catalog">Catalog</a>
         </div>
       </div>
       <div class="banner">
