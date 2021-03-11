@@ -113,7 +113,7 @@ name: "v-popup",
   justify-content: center;
   align-items: center;
 }
-.submit_btn{
+/*.submit_btn{
   padding: 8px;
   color: #ffffff;
   background-color: #0c8804;
@@ -122,7 +122,7 @@ name: "v-popup",
   padding: 8px;
   color: #ffffff;
   background-color: red;
-}
+}*/
 .close_btn{
   cursor: pointer;
 }

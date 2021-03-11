@@ -9,7 +9,7 @@
     <p v-if="!cart_data.length">Cart is empty...</p>
     <v-cart-item
       v-for="(item, index) in cart_data"
-      :key="item.article"
+      :key="item.id"
       :cart_item_data="item"
       @deleteFromCart="deleteFromCart(index)"
       @increment ="increment(index)"
