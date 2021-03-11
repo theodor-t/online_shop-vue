@@ -20,8 +20,8 @@
     </header>
     <router-link :to="{name: 'cart', params: {cart_data: CART}}">
       <div class="v-catalog__link__to_cart btn btn-outline-danger">
-        <i class="material-icons">shopping_cart</i>
-        Cart: {{ CART.length }}
+        <i class="material-icons icon-size">shopping_cart</i>Cart: {{ CART.length }}
+
       </div>
     </router-link>
     <div class="v-catalog__content">
@@ -122,6 +122,12 @@ export default {
 </script>
 
 <style>
+.btn-rounded {
+  border-radius: 19px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+}
 .v-catalog__list {
   display: flex;
   flex-wrap: wrap;
